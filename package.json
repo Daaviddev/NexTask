@@ -1,0 +1,43 @@
+{
+  "name": "gitbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node .",
+    "build": "webpack",
+    "format": "prettier --write \"**/*.{json,ts}\"",
+    "lint": "eslint . --ext ts --fix",
+    "forward": "ssh -R 80:localhost:5000 serveo.net"
+  },
+  "author": "NexCore Labs",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/graphql": "^7.1.0",
+    "@octokit/rest": "^20.1.1",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "bufferutil": "^4.0.8",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.2.0",
+    "prettier": "^3.3.2",
+    "ts-loader": "^9.5.1",
+    "tsx": "^4.15.4",
+    "typescript": "^5.4.5",
+    "utf-8-validate": "^6.0.4",
+    "webpack": "^5.92.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
